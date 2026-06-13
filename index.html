@@ -1,1 +1,446 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gadda Raghu | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:linear-gradient(135deg,#0f172a,#1e293b,#0f172a);
+color:white;
+overflow-x:hidden;
+}
+
+body::before{
+content:'';
+position:fixed;
+width:500px;
+height:500px;
+background:#38bdf8;
+border-radius:50%;
+filter:blur(200px);
+top:-150px;
+left:-150px;
+opacity:.25;
+z-index:-1;
+}
+
+body::after{
+content:'';
+position:fixed;
+width:500px;
+height:500px;
+background:#8b5cf6;
+border-radius:50%;
+filter:blur(200px);
+bottom:-150px;
+right:-150px;
+opacity:.25;
+z-index:-1;
+}
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+backdrop-filter:blur(20px);
+background:rgba(255,255,255,0.05);
+border-bottom:1px solid rgba(255,255,255,.1);
+z-index:1000;
+}
+
+.logo{
+font-size:24px;
+font-weight:700;
+color:#38bdf8;
+}
+
+nav ul{
+display:flex;
+gap:25px;
+list-style:none;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+transition:.3s;
+}
+
+nav a:hover{
+color:#38bdf8;
+}
+
+section{
+padding:100px 8%;
+}
+
+.hero{
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:50px;
+}
+
+.glass{
+background:rgba(255,255,255,0.08);
+backdrop-filter:blur(15px);
+border:1px solid rgba(255,255,255,.15);
+border-radius:20px;
+box-shadow:0 8px 32px rgba(0,0,0,.3);
+}
+
+.hero-text h1{
+font-size:60px;
+}
+
+.hero-text span{
+color:#38bdf8;
+}
+
+.hero-text p{
+margin-top:20px;
+line-height:1.8;
+color:#d1d5db;
+}
+
+.btn{
+display:inline-block;
+margin-top:20px;
+margin-right:10px;
+padding:12px 28px;
+border-radius:30px;
+background:#38bdf8;
+color:black;
+font-weight:600;
+text-decoration:none;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-3px);
+}
+
+.hero-img img{
+width:330px;
+height:330px;
+object-fit:cover;
+border-radius:50%;
+border:4px solid rgba(255,255,255,.2);
+}
+
+.title{
+text-align:center;
+font-size:40px;
+margin-bottom:40px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+padding:25px;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card h3{
+margin-bottom:10px;
+color:#38bdf8;
+}
+
+.contact{
+text-align:center;
+}
+
+.contact a{
+display:block;
+margin:12px 0;
+text-decoration:none;
+color:white;
+}
+
+footer{
+text-align:center;
+padding:30px;
+color:#94a3b8;
+}
+
+@media(max-width:900px){
+
+.hero{
+flex-direction:column-reverse;
+text-align:center;
+padding-top:120px;
+}
+
+.hero-text h1{
+font-size:42px;
+}
+
+.hero-img img{
+width:250px;
+height:250px;
+}
+
+nav ul{
+display:none;
+}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<div class="logo">Raghu.</div>
+
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#education">Education</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<section class="hero">
+
+<div class="hero-text">
+
+<h1>Hi, I'm <span>Gadda Raghu</span></h1>
+
+<h2 id="typing"></h2>
+
+<p>
+B.Tech Computer Science and Engineering student at
+MLR Institute of Technology, graduating in 2027.
+Passionate about Software Development, Data Science,
+Artificial Intelligence, Full Stack Development and GATE 2026 preparation.
+</p>
+
+<a href="gaddaraghu_resume.pdf" class="btn" target="_blank">
+Download Resume
+</a>
+
+<a href="#contact" class="btn">
+Contact Me
+</a>
+
+</div>
+
+<div class="hero-img">
+<img src="profile.png" alt="Gadda Raghu">
+</div>
+
+</section>
+
+<section id="about">
+
+<h2 class="title">About Me</h2>
+
+<div class="glass card">
+<p>
+I am a Computer Science and Engineering student with strong interest in
+Software Development, Artificial Intelligence, Machine Learning,
+Web Technologies and Data Science.
+
+I enjoy building real-world applications and continuously improving my
+technical skills through projects, certifications and competitive learning.
+My goal is to become a skilled software engineer and pursue higher studies
+or advanced opportunities in Computer Science.
+</p>
+</div>
+
+</section>
+
+<section id="education">
+
+<h2 class="title">Education</h2>
+
+<div class="glass card">
+<h3>B.Tech - Computer Science & Engineering</h3>
+<p>
+MLR Institute of Technology<br>
+Expected Graduation: 2027
+</p>
+</div>
+
+</section>
+
+<section id="skills">
+
+<h2 class="title">Skills</h2>
+
+<div class="cards">
+
+<div class="glass card">Java</div>
+<div class="glass card">Python</div>
+<div class="glass card">HTML</div>
+<div class="glass card">CSS</div>
+<div class="glass card">JavaScript</div>
+<div class="glass card">PHP</div>
+<div class="glass card">MySQL</div>
+<div class="glass card">DBMS</div>
+<div class="glass card">Operating Systems</div>
+<div class="glass card">Computer Networks</div>
+<div class="glass card">Machine Learning</div>
+<div class="glass card">Artificial Intelligence</div>
+<div class="glass card">Git & GitHub</div>
+
+</div>
+
+</section>
+
+<section id="projects">
+
+<h2 class="title">Projects</h2>
+
+<div class="cards">
+
+<div class="glass card">
+<h3>SPORTSYNC</h3>
+<p>
+A web-based sports court booking platform developed for MLR Institute
+of Technology students. Built using HTML, CSS, JavaScript, PHP,
+MySQL and Google OAuth integration.
+</p>
+</div>
+
+<div class="glass card">
+<h3>Crop Stress Detection</h3>
+<p>
+Machine Learning based project designed to identify crop stress
+conditions and assist farmers with early detection and better
+decision-making for agricultural productivity.
+</p>
+</div>
+
+<div class="glass card">
+<h3>Health Diet Assistant</h3>
+<p>
+A health-focused application that provides dietary recommendations
+for users, especially those managing diabetes and other health conditions.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="certifications">
+
+<h2 class="title">Certifications</h2>
+
+<div class="cards">
+
+<div class="glass card">
+<h3>IBM SkillsBuild</h3>
+<p>Professional Technology Certifications</p>
+</div>
+
+<div class="glass card">
+<h3>NPTEL</h3>
+<p>Database Management Systems</p>
+</div>
+
+<div class="glass card">
+<h3>AI & Data Science</h3>
+<p>Online Professional Learning Certifications</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2 class="title">Contact</h2>
+
+<div class="glass card contact">
+
+<a href="mailto:gaddaraghu6564@gmail.com">
+📧 gaddaraghu6564@gmail.com
+</a>
+
+<a href="https://github.com/gaddaraghu" target="_blank">
+💻 GitHub Profile
+</a>
+
+<a href="https://www.linkedin.com/in/raghuvaran06/" target="_blank">
+🔗 LinkedIn Profile
+</a>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 Gadda Raghu | Portfolio
+</footer>
+
+<script>
+
+const text = [
+"Computer Science Student",
+"Full Stack Developer",
+"Machine Learning Enthusiast",
+"GATE 2026 Aspirant"
+];
+
+let count = 0;
+let index = 0;
+let currentText = "";
+let letter = "";
+
+(function type(){
+
+if(count === text.length){
+count = 0;
+}
+
+currentText = text[count];
+letter = currentText.slice(0, ++index);
+
+document.getElementById("typing").textContent = letter;
+
+if(letter.length === currentText.length){
+count++;
+index = 0;
+setTimeout(type,1200);
+}
+else{
+setTimeout(type,100);
+}
+
+})();
+
+</script>
+
+</body>
+</html>
+```
 
